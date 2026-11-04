@@ -5,8 +5,7 @@
 An ESP32 camera with **my own firmware**, in a printed case. It streams live video and logs when pets or people move, **without keeping pictures by default**.
 
 <p align="center">
-  <img src="images/activity-light.png" width="49%" alt="Activity, light mode">
-  <img src="images/activity.png" width="49%" alt="Activity, dark mode">
+  <img src="images/activity-light.jpg" width="80%" alt="Activity: 14-day heatmap and the timeline of the cat feed cam">
 </p>
 
 ## Firmware
@@ -23,7 +22,7 @@ ESP-IDF in C, one task per module, on a shared core that every kibbl. device use
 - The same camera can watch a **3D printer** on the home network over its local MQTT: state, pause, resume, stop, and an alert when a print finishes or fails.
 
 <p align="center">
-  <img src="images/devices-light.png" width="80%" alt="Devices page: set up over USB or with a pairing code">
+  <img src="images/home-dark.jpg" width="80%" alt="Home page with the cameras, one offline, the cat feed cam online">
 </p>
 
 ## Motion detection on the server
