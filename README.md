@@ -24,8 +24,7 @@
 > This repository is a showcase: what kibbl. does, how it is built and what it looks like. The source code (firmware, server, app and CAD) is in a private repository.
 
 <p align="center">
-  <img src="media/overview-dark.gif" width="49%" alt="A walk through the kibbl. app, dark mode">
-  <img src="media/overview-light.gif" width="49%" alt="A walk through the kibbl. app, light mode">
+  <img src="media/overview.gif" width="900" alt="A walk through the real kibbl. app, dark and light mode">
 </p>
 
 ---
@@ -69,8 +68,8 @@ Each part has its own folder with the details, screenshots and clips:
 | <img src="media/icons/mcp.png" width="28" alt=""> | **[MCP](mcp/README.md)** | the AI end: 44 tools to read the whole home and act on it, mood and nervous-system regulation |
 
 <p align="center">
-  <img src="media/home-dark.png" width="49%" alt="Home, dark mode">
-  <img src="media/home-light.png" width="49%" alt="Home, light mode">
+  <img src="media/home-dark.jpg" width="49%" alt="Home, dark mode">
+  <img src="media/home-light.jpg" width="49%" alt="Home, light mode">
 </p>
 
 ---
@@ -87,7 +86,7 @@ Each part has its own folder with the details, screenshots and clips:
 | **Control** | adaptive PID heating per room, light moods and timers, night modes, open window → heating off |
 | **Hosting** | Docker Compose on a home server, public at kibbl.uk through a Cloudflare tunnel, OTA firmware updates with rollback |
 
-The screenshots and clips come from a demo account with generated data, so none of my personal data is shown. They switch between the app's dark and light modes.
+The screenshots and clips are taken from my own kibbl. at home, with its real data, switching between the app's dark and light modes. Other people's details are removed.
 
 ---
 
