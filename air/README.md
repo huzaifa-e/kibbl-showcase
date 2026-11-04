@@ -5,7 +5,7 @@
 An existing CO₂ traffic light board with **firmware I rewrote from scratch**. The original firmware was backed up first. Everything below runs on the device without the network, and events wait for the server.
 
 <p align="center">
-  <img src="images/air.gif" width="85%" alt="kibbl. air page, light mode">
+  <img src="images/air-light.jpg" width="85%" alt="kibbl. air in the living room: CO2, temperature and humidity over 24 hours, light and night settings">
 </p>
 
 ## The hardware
@@ -33,8 +33,7 @@ An existing CO₂ traffic light board with **firmware I rewrote from scratch**. 
 ## In the app
 
 <p align="center">
-  <img src="images/air-light.png" width="49%" alt="kibbl. air, light mode">
-  <img src="images/air.png" width="49%" alt="kibbl. air, dark mode">
+  <img src="../media/home-dark.jpg" width="80%" alt="Home page with the room climate cards of three kibbl. air">
 </p>
 
 - CO₂, temperature (with outside), humidity, cigarettes today, window state.
@@ -47,7 +46,7 @@ An existing CO₂ traffic light board with **firmware I rewrote from scratch**. 
 - Light, night schedule, thresholds and buzzer, fan, detection settings and calibration.
 
 <p align="center">
-  <img src="images/air-full-dark.png" width="55%" alt="kibbl. air, full page, dark mode">
+  <img src="../mcp/images/analysis-dark.jpg" width="80%" alt="Analysis: heat and air findings across the rooms">
 </p>
 
 ## Alerts and links
