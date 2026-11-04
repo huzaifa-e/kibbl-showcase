@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# Energy: electricity and heat
+# <img src="../media/icons/energy.png" width="36" alt="" align="top"> Energy: electricity and heat
 
 Two meters that were never meant to be smart: an **old Ferraris electricity meter** with a spinning disc, and **heat cost allocators** on the radiators that someone reads once a year. kibbl. turns both into daily data and tells me what the year will cost **before** the bill arrives.
 

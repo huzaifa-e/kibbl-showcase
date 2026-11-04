@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# kibbl. light: the TV backlight
+# <img src="../media/icons/light.png" width="36" alt="" align="top"> kibbl. light: the TV backlight
 
 A cheap Wi-Fi LED controller behind the TV, **opened up and reflashed** with my own firmware, so it speaks kibbl.'s protocol instead of its vendor's cloud.
 

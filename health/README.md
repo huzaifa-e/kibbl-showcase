@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# Health
+# <img src="../media/icons/health.png" width="36" alt="" align="top"> Health
 
 The data of a fitness tracker (Fitbit) through the **Google Health API**, **stored on my own server**, the full history and not only what the vendor's app chooses to show.
 

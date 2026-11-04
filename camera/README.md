@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# kibbl. cam: activity, not pictures
+# <img src="../media/icons/camera.png" width="36" alt="" align="top"> kibbl. cam: activity, not pictures
 
 An ESP32 camera with **my own firmware**, in a printed case. It streams live video and logs when pets or people move, **without keeping pictures by default**.
 

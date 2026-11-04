@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# kibbl. air: a reflashed CO₂ traffic light
+# <img src="../media/icons/air.png" width="36" alt="" align="top"> kibbl. air: a reflashed CO₂ traffic light
 
 An existing CO₂ traffic light board with **firmware I rewrote from scratch**. The original firmware was backed up first. Everything below runs on the device without the network, and events wait for the server.
 

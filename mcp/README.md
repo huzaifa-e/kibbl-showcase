@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# kibbl. MCP server
+# <img src="../media/icons/mcp.png" width="36" alt="" align="top"> kibbl. MCP server
 
 kibbl. serves an [MCP](https://modelcontextprotocol.io) endpoint at `/mcp` (Streamable HTTP, stateless). An AI assistant signs in with **OAuth** (dynamic client registration and a kibbl. sign-in page) or with a **personal access token**. Only token hashes are stored, and a token can be revoked at any time.
 

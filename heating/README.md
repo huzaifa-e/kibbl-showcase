@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# Heating: tado with an adaptive PID loop
+# <img src="../media/icons/heating.png" width="36" alt="" align="top"> Heating: tado with an adaptive PID loop
 
 The radiators have **tado** smart thermostats. kibbl. connects to tado's API with tado's own device-code sign-in (the password stays at tado, tokens are stored encrypted), reads every room and controls them. On top of tado's own control it runs an **adaptive PID loop** per room.
 

@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# Gym
+# <img src="../media/icons/gym.png" width="36" alt="" align="top"> Gym
 
 Training of **every kind in one place**: lifting, running, cycling, Pilates, yoga and mobility, HIIT, swimming, walking, sport. The week counts everything that was done, not only what one app knows about. It's built for the phone and installs to the home screen (a PWA that works offline in the gym), and it is linked with the fitness tracker, so each session's heart rate sits next to its sets.
 

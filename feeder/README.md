@@ -1,6 +1,6 @@
 [← kibbl.](../README.md)
 
-# kibbl. feeder
+# <img src="../media/icons/feeder.png" width="36" alt="" align="top"> kibbl. feeder
 
 A cat feeder I designed myself: a 1 kg hopper, a **3D-printed iris valve** that portions the food, a chute to the bowl, and a camera that watches the bowl. Until it is finished, kibbl. also runs a **PetKit** feeder through PetKit's cloud.
 

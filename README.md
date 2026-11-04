@@ -58,15 +58,15 @@ Each part has its own folder with the details, screenshots and clips:
 
 | | Section | What it covers |
 |---|---|---|
-| 🐈 | **[Feeder](feeder/README.md)** | the self-designed iris-valve feeder: parametric CAD, stress analysis, the printed prototype, the **overnight AI-supervised stress test**, PetKit in the meantime |
-| 🏋️ | **[Gym](gym/README.md)** | every kind of training, double progression and stall detection, volume per muscle on an anatomy chart, 270 exercises, Strong import |
-| ❤️ | **[Health](health/README.md)** | the full Fitbit history on my own server, including the **sedentary data Google's app hides**, heart rate per second, sleep stages |
-| 🔥 | **[Heating](heating/README.md)** | tado with an **adaptive PID loop**: room model learned by recursive least squares, IMC tuning, anti-windup, API budget |
-| ⚡ | **[Energy](energy/README.md)** | the Ferraris meter read by **EMONI** (OCR, NB-IoT / LoRaWAN), radiators and the landlord's statement read by OCR, the *Nachzahlung* known in advance |
-| 🌬️ | **[Air](air/README.md)** | a reflashed CO₂ traffic light: open windows, cigarettes, fire warning, mould risk |
-| 💡 | **[Light](light/README.md)** | a reflashed 1 MB LED controller behind the TV: TLS and OTA in 490 KB, moods, sunrise, an Android TV app |
-| 📷 | **[Camera](camera/README.md)** | own camera firmware, activity without pictures by default, setup over USB or by phone |
-| 🤖 | **[MCP](mcp/README.md)** | the AI end: 44 tools to read the whole home and act on it, mood and nervous-system regulation |
+| <img src="media/icons/feeder.png" width="28" alt=""> | **[Feeder](feeder/README.md)** | the self-designed iris-valve feeder: parametric CAD, stress analysis, the printed prototype, the **overnight AI-supervised stress test**, PetKit in the meantime |
+| <img src="media/icons/gym.png" width="28" alt=""> | **[Gym](gym/README.md)** | every kind of training, double progression and stall detection, volume per muscle on an anatomy chart, 270 exercises, Strong import |
+| <img src="media/icons/health.png" width="28" alt=""> | **[Health](health/README.md)** | the full Fitbit history on my own server, including the **sedentary data Google's app hides**, heart rate per second, sleep stages |
+| <img src="media/icons/heating.png" width="28" alt=""> | **[Heating](heating/README.md)** | tado with an **adaptive PID loop**: room model learned by recursive least squares, IMC tuning, anti-windup, API budget |
+| <img src="media/icons/energy.png" width="28" alt=""> | **[Energy](energy/README.md)** | the Ferraris meter read by **EMONI** (OCR, NB-IoT / LoRaWAN), radiators and the landlord's statement read by OCR, the *Nachzahlung* known in advance |
+| <img src="media/icons/air.png" width="28" alt=""> | **[Air](air/README.md)** | a reflashed CO₂ traffic light: open windows, cigarettes, fire warning, mould risk |
+| <img src="media/icons/light.png" width="28" alt=""> | **[Light](light/README.md)** | a reflashed 1 MB LED controller behind the TV: TLS and OTA in 490 KB, moods, sunrise, an Android TV app |
+| <img src="media/icons/camera.png" width="28" alt=""> | **[Camera](camera/README.md)** | own camera firmware, activity without pictures by default, setup over USB or by phone |
+| <img src="media/icons/mcp.png" width="28" alt=""> | **[MCP](mcp/README.md)** | the AI end: 44 tools to read the whole home and act on it, mood and nervous-system regulation |
 
 <p align="center">
   <img src="media/home-dark.png" width="49%" alt="Home, dark mode">
@@ -154,4 +154,4 @@ kibbl. runs every day in my home. Next up: the feeder on its own EMONI-based boa
 
 ---
 
-<p align="center"><sub>© Huzaifa Ejaz. Images and videos in this repository may not be reused without permission.</sub></p>
+<p align="center"><sub>© Huzaifa Ejaz. Images and videos in this repository may not be reused without permission. Icons: tiles from the kibbl. app, drawn with <a href="https://tabler.io/icons">Tabler Icons</a> (MIT).</sub></p>
