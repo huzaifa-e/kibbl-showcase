@@ -24,7 +24,8 @@
 > This repository is a showcase: what kibbl. does, how it is built and what it looks like. The source code (firmware, server, app and CAD) is in a private repository.
 
 <p align="center">
-  <img src="media/walkthrough.gif" width="900" alt="A walk through the kibbl. app">
+  <img src="media/overview-dark.gif" width="49%" alt="A walk through the kibbl. app, dark mode">
+  <img src="media/overview-light.gif" width="49%" alt="A walk through the kibbl. app, light mode">
 </p>
 
 ---
@@ -51,143 +52,52 @@ Devices record much more than their apps show you. **Google's Fitbit app, for ex
 
 ---
 
+## Sections
+
+Each part has its own folder with the details, screenshots and clips:
+
+| | Section | What it covers |
+|---|---|---|
+| 🐈 | **[Feeder](feeder/README.md)** | the self-designed iris-valve feeder: parametric CAD, stress analysis, the printed prototype, the **overnight AI-supervised stress test**, PetKit in the meantime |
+| 🏋️ | **[Gym](gym/README.md)** | every kind of training, double progression and stall detection, volume per muscle on an anatomy chart, 270 exercises, Strong import |
+| ❤️ | **[Health](health/README.md)** | the full Fitbit history on my own server, including the **sedentary data Google's app hides**, heart rate per second, sleep stages |
+| 🔥 | **[Heating](heating/README.md)** | tado with an **adaptive PID loop**: room model learned by recursive least squares, IMC tuning, anti-windup, API budget |
+| ⚡ | **[Energy](energy/README.md)** | the Ferraris meter read by **EMONI** (OCR, NB-IoT / LoRaWAN), radiators and the landlord's statement read by OCR, the *Nachzahlung* known in advance |
+| 🌬️ | **[Air](air/README.md)** | a reflashed CO₂ traffic light: open windows, cigarettes, fire warning, mould risk |
+| 💡 | **[Light](light/README.md)** | a reflashed 1 MB LED controller behind the TV: TLS and OTA in 490 KB, moods, sunrise, an Android TV app |
+| 📷 | **[Camera](camera/README.md)** | own camera firmware, activity without pictures by default, setup over USB or by phone |
+| 🤖 | **[MCP](mcp/README.md)** | the AI end: 44 tools to read the whole home and act on it, mood and nervous-system regulation |
+
+<p align="center">
+  <img src="media/home-dark.png" width="49%" alt="Home, dark mode">
+  <img src="media/home-light.png" width="49%" alt="Home, light mode">
+</p>
+
+---
+
 ## At a glance
 
 | | |
 |---|---|
-| **Own hardware** | kibbl. cam (live stream, motion activity), kibbl. air (CO₂, climate, open windows, cigarettes, fire warning), kibbl. light (TV backlight), kibbl. feeder (self-designed iris valve), all on one protocol, set up over USB from the browser or from a phone |
-| **Integrated vendors** | tado (heating, every room), PetKit (feeder), Google Health / Fitbit, Bambu Lab printer over local MQTT, Open-Meteo weather |
-| **Meters** | electricity through EMONI's optical OCR reader (NB-IoT / LoRaWAN), heat from radiator allocators and OCR of the yearly heating statement |
-| **Health & training** | full history of the tracker, a gym logger for every kind of training (lifting, runs, rides, Pilates, HIIT…), heart rate during each session, muscle volume per week, Strong import |
-| **AI** | an MCP server with 40+ tools: it reads everything, and changes what a person can change in the app, every change logged |
+| **Own hardware** | kibbl. cam, kibbl. air, kibbl. light, kibbl. feeder, all on one protocol, set up over USB from the browser or from a phone |
+| **Integrated vendors** | tado (heating), PetKit (feeder), Google Health / Fitbit, Bambu Lab printer over local MQTT, Open-Meteo weather |
+| **Meters** | electricity through EMONI's optical OCR reader, heat from radiator allocators and OCR of the yearly statements |
+| **Health & training** | the full tracker history, a gym logger for every kind of training, heart rate during each session |
+| **AI** | an MCP server with 44 tools: it reads everything and changes what a person can change in the app, every change logged |
 | **Control** | adaptive PID heating per room, light moods and timers, night modes, open window → heating off |
 | **Hosting** | Docker Compose on a home server, public at kibbl.uk through a Cloudflare tunnel, OTA firmware updates with rollback |
 
----
-
-## The app
-
-The pages below come from a demo account with generated data, so none of my personal data is shown.
-
-### Home and activity
-
-The home page shows the cameras, meters and devices together. Motion is logged as **activity, without pictures by default**: each camera has a setting for whether a picture of a movement is kept.
-
-<p align="center">
-  <img src="media/app/home.png" width="49%" alt="Home">
-  <img src="media/app/activity.png" width="49%" alt="Activity heatmap">
-</p>
-
-### Air: a reflashed CO₂ traffic light
-
-A CO₂ traffic light board running new firmware I wrote. It measures CO₂, temperature and humidity, detects open windows from the CO₂ falling towards fresh air, counts cigarettes from exhaled-smoke CO₂ puffs, warns of a possible fire and gives health hints (dry air, mould risk at outer walls, stale air in the bedroom).
-
-<p align="center">
-  <img src="media/app/air.png" width="80%" alt="kibbl. air page">
-</p>
-
-### Electricity: an old Ferraris meter, read by OCR
-
-An **EMONI** reader photographs the meter, reads the digits on the device and sends them over NB-IoT / LoRaWAN. kibbl. keeps every reading and shows consumption by day, month and year, power, battery and the base load at night.
-
-<p align="center">
-  <img src="media/app/meter.png" width="80%" alt="Electricity meter page">
-</p>
-
-### Heat: from radiators and the landlord's statement
-
-Heat cost allocators on the radiators plus the yearly statement, read by OCR. The use between two readings is spread over the days by tado's heating hours or by degree days, so the costs are known before the bill arrives.
-
-<p align="center">
-  <img src="media/app/heat.png" width="80%" alt="Heat page">
-</p>
-
-### Gym and health
-
-A gym logger built for the phone (installable, works offline): every kind of training, last time's sets next to each set, rest timer, records. It is linked with the tracker, so a session's heart rate sits next to its sets. Progress shows the days trained, minutes by kind and the weekly volume per muscle against the range that builds it.
-
-<p align="center">
-  <img src="media/app/gym-progress.png" width="49%" alt="Gym progress">
-  <img src="media/app/gym-history.png" width="49%" alt="Gym history">
-</p>
-
-### Light and analysis
-
-The TV backlight is a reflashed Wi-Fi LED controller with moods, effects (sunrise, candle, aurora…), weekly timers and alert flashes. The analysis page collects whatever stands out across the home: base load, offline devices, open windows while heating, battery.
-
-<p align="center">
-  <img src="media/app/light.png" width="49%" alt="Light page">
-  <img src="media/app/analysis.png" width="49%" alt="Analysis page">
-</p>
+The screenshots and clips come from a demo account with generated data, so none of my personal data is shown. They switch between the app's dark and light modes.
 
 ---
 
-## AI over MCP
+## AI and the nervous system
 
-kibbl. serves an **MCP endpoint** (Streamable HTTP, OAuth sign-in or personal tokens). Any MCP-capable assistant can connect to it and reach **all** of the home's data, then act through the same checks as the app. Every change is logged as made by the assistant.
-
-What that makes possible:
+kibbl.'s [MCP server](mcp/README.md) lets any MCP-capable assistant reach **all** of the home's data and act through the same checks as the app.
 
 * **Mood, light and temperature:** tell the assistant how you feel and it sets the light mood and the room temperature to match.
-* **Mental health and the nervous system:** log how you are doing in a conversation. The assistant reads it together with the body's signals (HRV, resting heart rate, last night's sleep, sedentary time, CO₂ in the room) and decides which settings at home help **calm the nervous system down**: warm, dim light without blue in the evening, a comfortable temperature, fresh air, a reminder to move.
-* **Heating:** hold a room by the adaptive PID controller, change the weekly schedule, switch off while a window is open.
-* **Questions across everything:** *"Why was my electricity higher last week?"*, *"How did my resting heart rate change since I started training three times a week?"*, *"Is the bedroom air stale at night?"*
-
-Read tools cover devices, a live camera picture, motion events and activity, air, heating and its schedule, meters, heat and costs, health per day and through a day, workouts and training progress, the feeder and the analysis. Write tools cover heating, light (moods, effects, timers, alerts), the kibbl. air, cameras, rooms, the feeding plan and heat readings. Firmware updates, Wi-Fi, restarts, removing devices and deleting data are deliberately **not** available to the assistant.
-
-The full tool list is in **[docs/mcp.md](docs/mcp.md)**.
-
----
-
-## Adaptive PID heating
-
-The radiator thermostat measures next to the radiator, so the room ends up colder or warmer than asked. kibbl. runs an **outer control loop** over tado's own:
-
-* The room is modelled as a first-order system, `dT/dt = a·(u − T) + b`, and its parameters are re-estimated after each reading by **recursive least squares with forgetting**. The model follows the season, the weather and the radiator.
-* The gains come from the room's time constant τ by **IMC tuning**: `Kp = τ / (λ + θ)`, `Ti = τ`, `Td = θ / 2`. A slow room gets a stronger push, a fast room a gentler one.
-* Derivative on the measurement (no kick when the setpoint changes), **anti-windup**, the integral held while a window is open.
-* Output in tado's 0.5 °C steps with hysteresis, within tado's daily API budget. Every setting expires, so the thermostats fall back to their own schedule if the server stops.
-
-The target is a temperature that is **comfortable and healthy** (WHO guidance, humidity and mould risk at outer walls) without heating more than needed.
-
----
-
-## Hardware
-
-### The self-designed feeder
-
-I started working on my own cat feeder. It portions the food with a **3D-printed iris valve** driven by a NEMA 17 closed-loop stepper. Every part is a **parametric Python script** (build123d) with STEP and STL committed next to it.
-
-<p align="center">
-  <img src="media/hardware/feeder.png" width="32%" alt="Feeder render">
-  <img src="media/hardware/exploded.png" width="32%" alt="Feeder exploded view">
-  <img src="media/hardware/iris-motion.gif" width="32%" alt="Iris valve motion">
-</p>
-
-<p align="center">
-  <img src="media/feeder/iris-on-motor.jpg" width="32%" alt="Printed iris on the stepper motor">
-  <img src="media/feeder/iris-printed.gif" width="32%" alt="Printed iris opening and closing">
-  <img src="media/hardware/iris-stress.png" width="32%" alt="Iris stress analysis">
-</p>
-
-#### Stress test: overnight, with the AI watching
-
-To stress-test the iris, I **pointed a kibbl. cam at the opening** and gave the job to an **AI assistant over MCP**. It watched the opening through the camera, decided how far to open and close the iris, and checked from the picture that the valve did what it was told. **The test ran overnight with no supervision.**
-
-<p align="center">
-  <img src="media/feeder/stress-test-setup.gif" width="300" alt="Stress test setup: camera above the iris, the app showing its view">
-</p>
-
-<p align="center">
-  <img src="media/hardware/feeding.gif" width="45%" alt="Feeding animation">
-  <img src="media/hardware/camera-view.png" width="45%" alt="Camera view into the feeder">
-</p>
-
-### Camera case
-
-<p align="center">
-  <img src="media/hardware/case.png" width="45%" alt="kibbl. cam case">
-</p>
+* **Mental health:** log how you are doing in a conversation. The assistant reads it with the body's signals (HRV, resting heart rate, last night's sleep, sedentary time, CO₂ in the room) and decides which settings at home help **calm the nervous system down**: warm, dim light without blue in the evening, a comfortable temperature, fresh air, a reminder to move.
+* **Hardware that tests itself:** the feeder's iris ran an [overnight stress test](feeder/README.md#stress-test-overnight-with-the-ai-watching) with an assistant watching it through a camera, deciding how far to open and close, with no supervision.
 
 ---
 
