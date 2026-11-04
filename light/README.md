@@ -5,8 +5,7 @@
 A cheap Wi-Fi LED controller behind the TV, **opened up and reflashed** with my own firmware, so it speaks kibbl.'s protocol instead of its vendor's cloud.
 
 <p align="center">
-  <img src="images/light-light.png" width="49%" alt="Light page, light mode">
-  <img src="images/light.png" width="49%" alt="Light page, dark mode">
+  <img src="images/light-light.jpg" width="80%" alt="Light page: moods and effects, light mode">
 </p>
 
 ## Fitting a TLS client into 1 MB
