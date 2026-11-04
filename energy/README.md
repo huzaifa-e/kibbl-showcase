@@ -5,7 +5,7 @@
 Two meters that were never meant to be smart: an **old Ferraris electricity meter** with a spinning disc, and **heat cost allocators** on the radiators that someone reads once a year. kibbl. turns both into daily data and tells me what the year will cost **before** the bill arrives.
 
 <p align="center">
-  <img src="images/energy.gif" width="85%" alt="Electricity meter and heat pages, dark mode">
+  <img src="images/energy.gif" width="85%" alt="Electricity meter and heat pages, dark and light mode">
 </p>
 
 ## Electricity: EMONI, OCR on the meter
@@ -17,8 +17,8 @@ Two meters that were never meant to be smart: an **old Ferraris electricity mete
 - live updates: the source announces each new reading on a server-sent-events stream, kibbl. catches up, and the page updates as the reading arrives.
 
 <p align="center">
-  <img src="images/meter-light.png" width="49%" alt="Electricity meter, light mode">
-  <img src="images/meter.png" width="49%" alt="Electricity meter, dark mode">
+  <img src="images/meter-dark.jpg" width="49%" alt="Electricity meter by day, dark mode">
+  <img src="images/meter-months-light.jpg" width="49%" alt="Electricity meter by month, light mode">
 </p>
 
 The meter page shows the reading, power, today's use and battery, consumption by day, month or year (total, mean, peak), and the meter reading over 2, 7 or 30 days.
@@ -32,8 +32,8 @@ The **analysis** flags:
 ## Heat: radiators and the landlord's statement
 
 <p align="center">
-  <img src="images/heat-full-light.png" width="50%" alt="Heat page, full, light mode">
-  <img src="images/heat.png" width="45%" alt="Heat page, dark mode">
+  <img src="images/heat-dark.jpg" width="49%" alt="Heat: season, costs against the advance, heat used per radiator">
+  <img src="images/heat-insights-light.jpg" width="49%" alt="Heat insights and the running costs of the statement">
 </p>
 
 - **Readings** of the radiators' heat cost allocators (units × the radiator's factor) and of whole-home meters (kWh, MWh, m³), entered by hand, imported from a report, or added by the AI assistant.
