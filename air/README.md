@@ -5,7 +5,7 @@
 An existing CO₂ traffic light board with **firmware I rewrote from scratch**. The original firmware was backed up first. Everything below runs on the device without the network, and events wait for the server.
 
 <p align="center">
-  <img src="images/air-light.jpg" width="85%" alt="kibbl. air in the living room: CO2, temperature and humidity over 24 hours, light and night settings">
+  <img src="images/air.gif" width="85%" alt="Scrolling the kibbl. air page of the living room: CO2, temperature, humidity and what tado heats to, cigarettes, light, night and fan settings">
 </p>
 
 ## The hardware
