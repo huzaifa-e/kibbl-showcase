@@ -11,8 +11,8 @@ Training of **every kind in one place**: lifting, running, cycling, Pilates, yog
 ## Train
 
 <p align="center">
-  <img src="images/gym-train-light.png" width="49%" alt="Train tab, light mode">
-  <img src="images/gym-history.png" width="49%" alt="History tab, dark mode">
+  <img src="images/gym-train-light.jpg" width="49%" alt="Train tab, light mode">
+  <img src="images/gym-history-dark.jpg" width="49%" alt="History with the tracker’s sessions, dark mode">
 </p>
 
 - **This week** by day and by kind, with templates of every kind and the muscles they train.
@@ -34,7 +34,8 @@ Training of **every kind in one place**: lifting, running, cycling, Pilates, yog
 ## Progress: volume per muscle
 
 <p align="center">
-  <img src="images/gym-progress-full-light.png" width="60%" alt="Progress tab, full page, light mode">
+  <img src="images/gym-progress-dark.jpg" width="49%" alt="Progress: days trained and minutes by kind, dark mode">
+  <img src="images/gym-muscles-light.jpg" width="49%" alt="Muscles of the last 4 weeks and what to change, light mode">
 </p>
 
 - **21 muscles in 11 groups.** Each group's hard sets per week are compared with the range that builds it (about 10–20 for the large groups, after Schoenfeld 2017 and Pelland 2024, less for the small ones). A set counts 1 for the muscle trained first and ½ for one that helps.
@@ -50,7 +51,7 @@ Training of **every kind in one place**: lifting, running, cycling, Pilates, yog
 ## Exercise library
 
 <p align="center">
-  <img src="images/gym-exercises-light.png" width="80%" alt="Exercise library, light mode">
+  <img src="images/gym-exercises-light.jpg" width="80%" alt="Exercise library, light mode">
 </p>
 
 A catalog of about **270 exercises**, named as Strong names them, each with primary and secondary muscles, equipment and kind (weight, bodyweight, assisted, hold, mobility, cardio). For an unknown exercise name, the app guesses the muscles from its words.
