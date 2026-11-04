@@ -124,5 +124,5 @@ The commercial feeder at home (a PetKit Fresh Element Solo) is connected through
 - a kibbl. cam over the feeder: the stream on the feeder page, and with "cat only" motion detection (a cat detector on the server) the activity counts only the cat.
 
 <p align="center">
-  <img src="images/petkit-dark.png" width="80%" alt="Devices page with the PetKit connection">
+  <img src="images/feeder-dark.jpg" width="80%" alt="Feeder page: the cat feed cam over the PetKit feeder, today’s meals, feed now">
 </p>
