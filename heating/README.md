@@ -5,8 +5,8 @@
 The radiators have **tado** smart thermostats. kibbl. connects to tado's API with tado's own device-code sign-in (the password stays at tado, tokens are stored encrypted), reads every room and controls them. On top of tado's own control it runs an **adaptive PID loop** per room.
 
 <p align="center">
-  <img src="images/rooms-light.png" width="49%" alt="Rooms, light mode">
-  <img src="images/heat-dark.png" width="49%" alt="Heat page, dark mode">
+  <img src="images/air-light.jpg" width="49%" alt="A room over 24 hours: temperature, humidity and what tado heats to">
+  <img src="images/heat-dark.jpg" width="49%" alt="Heat page, dark mode">
 </p>
 
 ## The problem
