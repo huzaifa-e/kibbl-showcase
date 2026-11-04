@@ -5,7 +5,7 @@
 The data of a fitness tracker (Fitbit) through the **Google Health API**, **stored on my own server**, the full history and not only what the vendor's app chooses to show.
 
 <p align="center">
-  <img src="images/health.gif" width="85%" alt="Health page, light mode">
+  <img src="images/health.gif" width="85%" alt="Health page with real tracker data">
 </p>
 
 ## Why
@@ -15,8 +15,8 @@ The tracker records much more than its app shows. **Google's Fitbit app doesn't 
 ## What's on the page
 
 <p align="center">
-  <img src="images/health-dark.png" width="49%" alt="Health page, dark mode">
-  <img src="images/health-full-light.png" width="40%" alt="Health page, full, light mode">
+  <img src="images/health-dark.jpg" width="49%" alt="Health: tracker, last night, metric cards with sedentary hours">
+  <img src="images/health-dark-2.jpg" width="49%" alt="Sleep, heart rate zones, breathing by sleep stage, a workout’s heart rate">
 </p>
 
 - **Tracker:** battery, last sync, latest heart rate.
