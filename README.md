@@ -24,7 +24,7 @@
 > This repository is a showcase: what kibbl. does, how it is built and what it looks like. The source code (firmware, server, app and CAD) is in a private repository.
 
 <p align="center">
-  <img src="media/overview.gif" width="900" alt="A walk through the real kibbl. app, dark and light mode">
+  <img src="media/overview.gif" width="900" alt="Scrolling through the real kibbl. app: home, health, gym, heat, air and electricity, in light and dark mode">
 </p>
 
 ---
@@ -53,7 +53,7 @@ Devices record much more than their apps show you. **Google's Fitbit app, for ex
 
 ## Sections
 
-Each part has its own folder with the details, screenshots and clips:
+Each part has its own folder with the details, screenshots and clips (every clip has an MP4 next to it):
 
 | | Section | What it covers |
 |---|---|---|
