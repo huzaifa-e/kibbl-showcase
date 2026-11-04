@@ -1,8 +1,26 @@
+[← kibbl.](../README.md)
+
 # kibbl. MCP server
 
 kibbl. serves an [MCP](https://modelcontextprotocol.io) endpoint at `/mcp` (Streamable HTTP, stateless). An AI assistant signs in with **OAuth** (dynamic client registration and a kibbl. sign-in page) or with a **personal access token**. Only token hashes are stored, and a token can be revoked at any time.
 
 Each person reaches only their own home: their devices, meters, rooms, health and training. Write tools go through the same checks as the app, and every change is logged with `via=assistant`.
+
+## What it is for
+
+kibbl. is a bridge between hardware, software and AI. The MCP server is the AI end: one connection gives an assistant the whole home (cameras, air, heating, light, feeder, meters, heat costs, health and training) to read and act on, with the person deciding what it may change.
+
+- **Mood, light and temperature:** say how you feel and the assistant sets the light mood and the room temperature to match.
+- **Mental health and the nervous system:** log how you're doing in a conversation. The assistant reads it next to the body's signals (HRV, resting heart rate, sleep, sedentary time) and the room (CO₂, temperature), and decides which settings at home help calm the nervous system down.
+- **Unsupervised hardware tests:** the [feeder's iris](../feeder/README.md#stress-test-overnight-with-the-ai-watching) was stress-tested overnight by an assistant watching it through a camera.
+- **Questions across everything:** *"Why was my electricity higher last week?"*, *"Is the bedroom air stale at night?"*, *"How did my resting heart rate change since I started training three times a week?"*
+
+The analysis page, which `kibbl_analysis` also returns, collects whatever stands out across the home:
+
+<p align="center">
+  <img src="images/analysis-light.png" width="49%" alt="Analysis, light mode">
+  <img src="images/analysis.png" width="49%" alt="Analysis, dark mode">
+</p>
 
 ## Read tools
 
