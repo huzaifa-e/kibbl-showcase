@@ -18,8 +18,7 @@ kibbl. is a bridge between hardware, software and AI. The MCP server is the AI e
 The analysis page, which `kibbl_analysis` also returns, collects whatever stands out across the home:
 
 <p align="center">
-  <img src="images/analysis-light.png" width="49%" alt="Analysis, light mode">
-  <img src="images/analysis.png" width="49%" alt="Analysis, dark mode">
+  <img src="images/analysis-dark.jpg" width="80%" alt="Analysis, dark mode">
 </p>
 
 ## Read tools
