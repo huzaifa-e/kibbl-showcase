@@ -22,7 +22,7 @@ ESP-IDF in C, one task per module, on a shared core that every kibbl. device use
 - The same camera can watch a **3D printer** on the home network over its local MQTT: state, pause, resume, stop, and an alert when a print finishes or fails.
 
 <p align="center">
-  <img src="images/home-dark.jpg" width="80%" alt="Home page with the cameras, one offline, the cat feed cam online">
+  <img src="images/home.gif" width="80%" alt="Scrolling the home page: the cameras, the room climate of three kibbl. air, the feeder, the TV backlight and the PetKit feeder">
 </p>
 
 ## Motion detection on the server
